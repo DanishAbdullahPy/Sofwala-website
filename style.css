@@ -1,0 +1,140 @@
+/* Default font size for normal screens */
+.h1 {
+    font-size: 5px;
+}
+
+
+
+/* Adjust font size for even smaller screens */
+@media screen and (max-width: 480px) {
+    .h1 {
+        font-size: 4px;
+    }
+}
+
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #CCC9AD;
+    backdrop-filter: blur(5px);
+    margin: auto;
+    padding: auto;
+}
+
+.main {
+    background-image: linear-gradient(to bottom right, #EFE9D0, #c0bba3);
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    margin-bottom: 50em;
+}
+
+ul {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    text-align: left;
+    list-style: circle;
+
+
+}
+
+.leftwala {
+    position: absolute;
+    top: 20px;
+    right: 5em;
+    list-style: circle;
+    text-align: right;
+
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    /* Adjust margin for better spacing */
+    margin: 5px 30px;
+    /* Add vertical spacing between list items */
+}
+
+.container {
+    text-align: center;
+    padding-top: 27.6px;
+    /* Adjust this value to your preference */
+}
+
+.company-name {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+
+
+
+h1 {
+    text-align: left;
+    /* Center align the heading */
+    font-weight: 100;
+    margin-top: 2.6em;
+    margin-left: 1.9em;
+
+}
+
+h3 {
+    text-align: left;
+    /* Center align the heading */
+    font-weight: 300;
+    margin-left: 3.5em;
+    font-size: 18px;
+}
+
+img {
+    max-width: 70%;
+    /* Ensure images don't exceed their container */
+    position: relative;
+    top: -14em;
+    /* Adjust the value as needed to move the image up */
+    left: 11em;
+
+
+}
+
+
+
+
+
+
+
+/* Container for both images */
+.image-container {
+    position: relative;
+    /* Establishes a positioning context for absolute positioning */
+    display: inline-block;
+    /* Makes the container only take up as much width as necessary */
+}
+
+/* Styling for all images inside the container */
+.image-container img {
+    vertical-align: middle;
+    max-width: 77%;
+    margin-left: -2.3
+    em;
+
+    /* Vertically aligns the images */
+}
+
+/* Styling specifically for the second image (plant) */
+.image-container img:nth-child(2) {
+    position: absolute;
+    /* Positions the image absolutely within its container */
+    top: 49%;
+    /* Positions the top of the image at the vertical center of the container */
+    transform: translateY(-99%);
+    /* Translates the image up by 50% of its own height to vertically center it */
+    max-width: 39%;
+    /* Sets the maximum width of the plant image */
+    z-index: 10;
+    left: 63em;
+
+}
